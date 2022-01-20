@@ -24,3 +24,7 @@ def profile(request, pk):
         current_user_profile.save()
 
     return render(request, "dwitter/profile.html", {"profile": profile})
+
+
+def dashboard(request):
+    return render(request, "dwitter/dashboard.html")
